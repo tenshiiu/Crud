@@ -1,4 +1,4 @@
-import { UseRef } from "react";
+import { useRef } from "react";
 
 import styled from "styled-components";
 
@@ -13,11 +13,46 @@ const FormContainer = styled.form`
     border-radius: 5px;
 `;
 
+const InputArea = styled.div`
+    display: flex;
+    flex-direction: column;
+`;
+
+const Input = styled.input`
+    width: 120px;
+    padding: 0 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    height: 40px;
+`;
+
+const Label = styled.label``;
+
+const Button = styled.button`
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #2C73D2;
+    color: white;
+    height: 42px;
+`;
+
 function Form({ onEdit }) {
     const ref = useRef();
 
     return (
         <FormContainer ref={ref}>
+            <InputArea>
+            <Label>Nome</Label>
+            <Input name="nome"/>
+            </InputArea>
+            <InputArea>
+            <Label>Descrição</Label>
+            <Input name="descricao"/>
+            </InputArea>
+
+          <Button type="submit">SALVAR</Button>  
         </FormContainer>
     )
 }

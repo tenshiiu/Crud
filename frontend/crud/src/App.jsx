@@ -24,7 +24,7 @@ function App() {
         <Title>USUÁRIOS</Title>
         <Form />
       </Container>
-      <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} />
+      {/* <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} /> */}
       <GlobalStyle />
     </>
   )
