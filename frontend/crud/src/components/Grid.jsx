@@ -1,6 +1,6 @@
 import axios from "axios";
 import styled from "styled-components";
-import { faTrash, FaEdit, FaTrash } from "react-icons/fa";
+import { FaEdit, FaTrash } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const Table = styled.table`
@@ -16,7 +16,9 @@ const Table = styled.table`
 
 export const Thead = styled.thead``;
 
-export const Tr = styled.thead``;
+export const Tbody = styled.tbody``;
+
+export const Tr = styled.tr``;
 
 export const Th = styled.th`
     text-align: start;
